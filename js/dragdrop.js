@@ -1,4 +1,4 @@
-  const products = document.querySelectorAll('.product-box');
+const products = document.querySelectorAll('.product-box');
   const cartDrop = document.getElementById('cartDrop');
   const cartList = document.getElementById('cartList');
   const cartTotal = document.getElementById('cartTotal');
@@ -6,6 +6,7 @@
   const closePopup = document.getElementById('closePopup');
 
   let cart = JSON.parse(localStorage.getItem('cartItems')) || [];
+  let popupShownAt2Items = false;
 
   function updateCartUI() {
     cartList.innerHTML = '';
@@ -25,7 +26,6 @@
     localStorage.setItem('cartItems', JSON.stringify(cart));
     document.getElementById('cartCount').textContent = cart.length;
 
-    // Thêm sự kiện xoá
     const removeButtons = document.querySelectorAll('.remove-btn');
     removeButtons.forEach(button => {
       button.addEventListener('click', () => {
@@ -34,11 +34,6 @@
         updateCartUI();
       });
     });
-
-    // Hiển popup khi đủ 2 sản phẩm
-    if (cart.length === 2) {
-      successPopup.classList.remove('hidden');
-    }
   }
 
   closePopup.addEventListener('click', () => {
@@ -71,6 +66,11 @@
     const item = JSON.parse(e.dataTransfer.getData('text/plain'));
     cart.push(item);
     updateCartUI();
+
+    if (cart.length === 2 && !popupShownAt2Items) {
+      successPopup.classList.remove('hidden');
+      popupShownAt2Items = true;
+    }
   });
 
   updateCartUI();
