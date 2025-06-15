@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const email = document.getElementById("loginEmail").value;
       const password = document.getElementById("loginPassword").value;
 
-      if (email === "langla779@gmail.com" && password === "123456") {
+      if (email === "ktvshop@gmail.com" && password === "123456") {
         alert("Đăng nhập thành công!");
       } else {
         alert("Email hoặc mật khẩu không chính xác!");
