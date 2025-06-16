@@ -43,7 +43,7 @@
       </div>
       <div class="container">
         <div class="logo">
-          <a href="index.html"><img src="./img/logo4.png" alt="STAR" /></a>
+          <a href="index.html"><img src="./img/logo.png" alt="STAR" /></a>
         </div>
 
         <button class="menu-btn">
@@ -109,11 +109,8 @@
 
     <!-- Sản phẩm -->
     <div class="product-wrapper">
-
-      <!-- Box 1 -->
-      <a href="./product/sp1.html" class="product-link">
-        <div class="product-box">
-        <div class="discount-badge">Giảm 20%</div>
+      <div class="product-box">
+        <div class="discount-badge">Giảm 15%</div>
         <img src="./img/laptop1/anh1.webp" alt="iPhone 16" class="product-img" />
         <h3 class="product-name">
           Laptop Asus TUF Gaming A15 FA507NVR-LP091W (Ryzen 7 7435HS/ GeForce RTX™ 4060/ 16GB/ 512GB/ Windows 11 Home)
@@ -132,11 +129,9 @@
           ⭐⭐⭐⭐⭐ <span class="wishlist">Yêu thích ♥</span>
         </div>
       </div>
-      </a>
 
       <!-- Box 2 -->
-       <a href="./product/sp2.html" class="product-link">
-        <div class="product-box">
+      <div class="product-box">
         <div class="discount-badge">Giảm 10%</div>
         <img src="./img/laptop2/anh1.webp" alt="Galaxy S25" class="product-img" />
         <h3 class="product-name">Laptop Msi Modern 15 B13M-438VN (i5-1335U/ Onboard graphics/ 8GB/ 512GB/ Windows 11)</h3>
@@ -154,7 +149,6 @@
           ⭐⭐⭐⭐⭐ <span class="wishlist">Yêu thích ♥</span>
         </div>
       </div>
-       </a>
 
       <!-- Box 3 -->
       <div class="product-box">
@@ -356,6 +350,7 @@
   </div>
 </div>
 
+
     <!-- FOOTER -->
     <footer class="footer">
       <!-- Top icons row -->
@@ -391,20 +386,11 @@
             <li><a href="#">Tuyển dụng</a></li>
           </ul>
           <div class="social">
-            <a href="https://www.facebook.com/cnttFpolyDongNai" target="_blank">
-              <i class="fab fa-facebook-f"></i></a>
-
-            <a href="https://www.youtube.com/shorts/nNK4jmekiQE" target="_blank">
-              <i class="fab fa-youtube"></i></a>
-
-            <a href="https://www.tiktok.com/@lukman.juventino/video/7466604604218805510?q=html%2C%20css&t=1749998263276" target="_blank">
-              <i class="fab fa-tiktok"></i></a>
-
-            <a href="#">
-              <i class="fab fa-linkedin-in"></i></a>
-
-            <a href="https://www.w3schools.com/html/html_css.asp" target="_blank">
-              <i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
           </div>
         </div>
 
@@ -443,5 +429,42 @@
     </footer>
     <script src="./js/slide.js"></script>
     <script src="./js/dragdrop.js"></script>
+
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/684fb40db28b01190c4fddf1/1itrlelh9';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+
+<script>
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+
+  // Khi người dùng thu nhỏ cửa sổ chat
+  Tawk_API.onChatEnded = function() {
+  resetChatSession();
+};
+
+  function resetChatSession() {
+  if (typeof Tawk_API.endChat === 'function') {
+    Tawk_API.endChat();
+  }
+
+  // Xóa session và cookies nhẹ nhàng, KHÔNG reload
+  setTimeout(function () {
+    localStorage.removeItem('tawkUUID'); // Chỉ xóa ID session của Tawk.to
+    sessionStorage.clear();
+  }, 500);
+}
+</script>
+
+
+
   </body>
 </html>
