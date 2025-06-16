@@ -38,6 +38,10 @@ body {
   text-decoration: underline;
 }
 
+.nav-item i {
+    margin-right: 5px;
+}
+
 .container {
   width: 95%;
   max-width: 1300px;
@@ -49,7 +53,7 @@ body {
 
 .logo img {
   width: auto;
-  height: 100px;
+  height: 150px;
 }
 
 .menu-btn {
@@ -232,6 +236,12 @@ body {
   margin: 0 auto;  
 }
 
+.product-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .product-box {
   position: relative;
   background: white;
@@ -240,6 +250,10 @@ body {
   padding: 15px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   overflow: hidden;
+  flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* hoặc min-height: 400px; */
 }
 
 .product-box:hover {
